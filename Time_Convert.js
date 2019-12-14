@@ -1,6 +1,14 @@
-function TimeConvert(num) {
-  let hours = Math.floor(num / 60);
-  let minutes = num % 60;
+/* Have the function AlphabetSoup(str) take the str string parameter being passed and return the string with the letters in alphabetical order (ie. hello becomes ehllo). Assume numbers and punctuation symbols will not be included in the string.
 
-  return hours + ":" + minutes;
+Examples 
+Input: "coderbyte"
+Output: bcdeeorty
+Input: "hooplah"
+Output: ahhloop
+*/
+
+function AlphabetSoup(str) {
+  let letters = str.split("");
+  
+  return letters.sort().join("");
 }
